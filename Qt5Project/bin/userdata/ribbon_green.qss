@@ -1,0 +1,102 @@
+
+/*通用Widget*/
+QWidget#RobbonWidget
+{
+	background-color    : rgba(241, 241, 241, 255);
+} 
+
+/*主界面*/
+QWidget#RibbonMainWindow
+{
+	border : on;
+	background-color    : rgba(220,220,220,255);
+	border-color : red;
+	
+}
+
+/*标题栏*/
+QWidget#RibbonTitleBar
+{
+	/*这是windows经典绿色*/
+	background-color    : rgba(33,115,70,255);  
+}
+QToolBar#RibbonQuickAccessToolBar
+{
+	background-color    : rgba(33,115,70,255);
+}
+QToolBar#RibbonQuickAccessToolBar>QToolButton:hover
+{
+	background-color    : rgba(50,150,255,255);
+}
+QToolBar#RibbonQuickAccessToolBar>QToolButton:!hover
+{
+	background-color    : rgba(33,115,70,255);
+}
+
+/*菜单栏-主菜单*/
+QWidget#RibbonMenuBar
+{
+	background-color : rgba(33,115,70,255);
+}
+
+QTabBar#RibbonMenuTabBar
+{
+	height: 32px;
+	background-color    : rgba(33,115,70,255);
+}
+QTabBar#RibbonMenuTabBar::tab:selected{ height: 32px; background-color: rgba(241,241,241,255); color : darkBlue; }
+QTabBar#RibbonMenuTabBar::tab:!selected{ height: 32px; background-color: rgba(33,115,70,255); color: white;}
+QTabBar#RibbonMenuTabBar::tab:hover{ height: 32px; background-color: rgba(230,230,230,255); color : darkBlue; }
+/*菜单栏-扩展菜单*/
+QWidget#RibbonExtentedMenuTabBar
+{
+	background-color : rgba(33,115,70,255);
+}
+
+QTabBar#RibbonExtentedMenuTabBar
+{
+	height: 32px;
+	background-color    : rgba(33,115,70,255);
+}
+QTabBar#RibbonExtentedMenuTabBar::tab:selected{ height: 32px; background-color: rgba(241,241,241,255); color : darkBlue; }
+QTabBar#RibbonExtentedMenuTabBar::tab:!selected{ minx-width:1px;  height: 32px; background-color: rgba(33,115,70,255); color: white;}
+QTabBar#RibbonExtentedMenuTabBar::tab:hover{ height: 32px; background-color: rgba(230,230,230,255); color : darkBlue; }
+
+/*菜单栏-工具栏区的StackeWidget*/
+QStackedWidget#RibbonMenuStackeWidget
+{
+	background-color    : rgba(241, 241, 21, 255);
+}
+
+ 
+QWidget#RibbonGroupWidget
+{
+	background-color    : rgba(241, 241, 241, 255);
+}    
+
+QPushButton
+{
+	background-color  : rgba(230, 230, 230, 0);
+	border-color : rgba(0,0,0,0);
+}
+
+QPushButton:hover
+{
+	/*border-radius: 3px;*/
+	border : off;
+	background-color  : rgba(220, 220, 220, 255);
+}
+QPushButton:pressed
+{	border : off;
+	background-color  : rgba(210, 210, 210, 255);
+}
+QPushButton:checked
+{	border : off;
+	background-color  : rgba(240, 240, 240, 255);
+}
+QDockWidget>QWidget
+{
+	background-color  : rgba(241, 241, 241, 255);
+	/*background-color : qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(200, 240, 255, 200), stop:1 rgba(255, 255, 255, 255));*/
+}
+
